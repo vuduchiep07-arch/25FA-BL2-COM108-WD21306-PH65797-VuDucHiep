@@ -10,7 +10,7 @@ void kiemTraSoNguyen()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -28,7 +28,7 @@ void timUocChungVaBoiChung()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -46,7 +46,7 @@ void tinhTienKaraoke()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -64,7 +64,7 @@ void tinhTienDien()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -82,7 +82,7 @@ void chucNangDoiTien()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -100,7 +100,7 @@ void vayNganHangVayTraGop()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -118,7 +118,7 @@ void vayTienMuaXe()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -136,7 +136,7 @@ void ttSinhVien()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -154,7 +154,7 @@ void chucNangChin()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
@@ -172,7 +172,7 @@ void chucNangMuoi()
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
-        scanf("%d", &luaChon);
+        scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
         {
