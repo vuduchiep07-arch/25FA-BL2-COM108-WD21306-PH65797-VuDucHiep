@@ -58,7 +58,7 @@ int main()
         printf("menu\n");
         printf("menu\n");
 
-        scanf("%d", &chonChucNang);
+        scanf_s("%d", &chonChucNang);
         lapChucNang(chonChucNang);
 
     } while (chonChucNang != 0);
