@@ -7,9 +7,57 @@ void kiemTraSoNguyen()
     do
     {
         printf("Kiem tra so nguyen\n");
+		int n;  
+		printf("Nhap so can kiem tra:\n ");
+		scanf_s("%d", &n);
+		if (n == (int)n)
+		{
+			printf("%d la so nguyen\n", n);
+		}
+        else
+
+        {
+            printf("%d khong phai la so nguyen\n", n);
+        }
+        printf("Kiem tra so nguyen to\n");
+		int i, soNgTo = 0;
+		if (n <= 1)
+		{
+			printf("%d khong phai la so nguyen to\n", n);
+		}
+		else
+		{
+			for (i = 2; i <= sqrt(n); i++)
+			{
+				if (n % i == 0)
+				{
+					soNgTo = 1;
+					break;
+				}
+			}
+			if (soNgTo == 0)
+			{
+				printf("%d la so nguyen to\n", n);
+			}
+			else
+			{
+				printf("%d khong phai la so nguyen to\n", n);
+			}
+		}
+		printf( "Kiem tra so chinh phuong\n");
+		int sqrt_n = (int)sqrt(n);
+		if (sqrt_n * sqrt_n == n)
+		{
+			printf("%d la so chinh phuong\n", n);
+            }
+        else
+        {
+            printf("%d khong phai la so chinh phuong\n", n);
+		}
+
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
-        printf("Lua chon cua ban: ");
+        printf("Lua chon cua ban:\n ");
         scanf_s("%d", &luaChon);
         printf("---------------------------------------\n");
         if (luaChon != 1 && luaChon != 2)
@@ -25,6 +73,22 @@ void timUocChungVaBoiChung()
     do
     {
         printf("Tim Uoc chung va Boi chung\n");
+		printf("Nhap hai so nguyen a va b:\n ");
+		int a, b;
+		scanf_s("%d %d", &a, &b);
+		int original_a = a;
+		int original_b = b;
+		while (b != 0)
+		{
+			int temp = b;
+			b = a % b;
+			a = temp;
+		}
+		int uoc_chung = a;
+		int boi_chung = (original_a * original_b) / uoc_chung;
+		printf("Uoc chung lon nhat cua %d va %d la: %d\n", original_a, original_b, uoc_chung);
+		printf("Boi chung nho nhat cua %d va %d la: %d\n", original_a, original_b, boi_chung);
+            
         printf("1: tiep tuc truong trinh\n");
         printf("2: quay lai menu\n");
         printf("Lua chon cua ban: ");
