@@ -123,7 +123,7 @@ void tinhTienKaraoke()
         scanf("%d", &gioBD);
         printf("Nhap vao gio ket thuc thue phong: ");
         scanf("%d", &gioKT);
-        if (gioBD < 11 && gioKT > 24 && gioKT <= gioBD)
+        if (gioBD < 11 || gioKT > 24 || gioKT <= gioBD)
         {
             printf("So gio khong hop le, vui long nhap lai [12h->23h]\n");
             continue;
