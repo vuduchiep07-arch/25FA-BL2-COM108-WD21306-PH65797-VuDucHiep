@@ -56,6 +56,38 @@ void string()
    // printf("\n");
     //puts(name)     )
 }
+void mangKiTu()
+{
+    printf("string length : ");
+    printf("%d\n", strlen(mangKiTu));
+    printf("String Compare The Same As: ");
+    printf("%d\n", strcmp(mangKiTu, "Name"));
+    printf("String Comoare Less Than: ");
+    printf("%d\n", strcmp(mangKiTu, "A", "C"));
+    printf("String Comoare Greater Than: ");
+    printf("%d\n", strcmp(mangKiTu, "C", "A"));
+
+    printf("String Reverse (Encryption: ");
+    printf("%s\n", strrev(mangKiTu));
+    printf("String Reverse (Decryption: ");
+    printf("%s\n", strrev(mangKiTu));
+    printf("String Lower: ");
+    printf("%s\n", strlwr(mangKiTu));
+    printf("String Upper: ");
+    printf("%s\n", strupr(mangKiTu));
+    printf("Find String in String: ");
+    if (strstr(mangKiTu, "A") != NULL)
+    {
+        printf("Found\n");
+        printf("%s\n", strstr(mangKiTu, "A"));
+
+    }
+    else
+    {
+        printf("Not Found\n");
+    }
+
+}
 void lapChucNang(int chonChucNang)
     { 
         int tiepTuc = 1;
@@ -72,10 +104,13 @@ void lapChucNang(int chonChucNang)
             case 3:
 				string();
                 break;
+            case 4:
+                mangKiTu();
+                break;
             case 0:
                 return;
             default:
-                printf("chon lai [0-3]");
+                printf("chon lai [0-4]");
                 break;
 
             }
@@ -95,7 +130,7 @@ int main()
         printf("1. Kiem Tra so nguyen \n");
         printf("2. mang 2 chieu\n");
         printf("3.String \n");
-        printf("menu\n");
+        printf("4. mang ki tu\n");
         printf("menu\n");
         printf("menu\n");
         printf("menu\n");
